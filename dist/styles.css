@@ -234,8 +234,12 @@ select {
   outline: none;
 }
 
-.header-middle__bucket {
+.header-middle__busket {
   width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-form {
@@ -260,15 +264,29 @@ select {
   margin: 30px 0;
 }
 
+.busket {
+  position: relative;
+}
+
+.busket__svg {
+  position: absolute;
+}
+
 .basket__tooltip {
   border-radius: 50%;
   background-color: #ecc7d0;
   position: absolute;
-  left: 1485px;
-  top: 120px;
-  width: 20px;
-  height: 20px;
+  left: 20px;
+  top: 20px;
+  width: 15px;
+  height: 15px;
   z-index: 259;
+}
+
+.basket__text {
+  color: white;
+  font-size: 0.6em;
+  text-align: center;
 }
 
 .header-nav {
@@ -281,6 +299,7 @@ select {
 
 .header-nav__list {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
@@ -296,9 +315,13 @@ select {
   left: 0;
   top: 15px;
   float: none;
-  width: 200px;
+  width: 150px;
   list-style: none;
   position: absolute;
+  border: 2px solid #f7f7f7;
+  -webkit-box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
+  box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
 }
 
 .has-submenu:hover .submenu {
@@ -306,8 +329,30 @@ select {
 }
 
 .has-submenu:hover .submenu .subitem {
-  border: 2px solid blue;
-  width: 150px;
+  width: 130px;
+  position: relative;
+  margin-left: 20px;
+  padding: 10px 10px;
+  transform: translateX(-20px);
+  color: black;
+}
+
+.submenu__link {
+  color: black;
+  text-decoration: none;
+}
+
+.subitem:hover {
+  background-color: #f7f7f7;
+  margin-right: 20px;
+}
+
+.subitem:first-child {
+  margin-top: 20px;
+}
+
+.subitem:last-child {
+  margin-bottom: 20px;
 }
 
 .has-submenu2 .submenu2 {
@@ -316,13 +361,24 @@ select {
   padding: 0;
   margin: 0;
   left: 150px;
+  top: -2px;
   float: none;
   width: 100px;
   list-style: none;
   background-color: yellow;
-  border: 2px solid red;
 }
 
 .has-submenu2:hover .submenu2 {
   display: inline-block;
+}
+
+.header-nav__link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 1s;
+}
+
+.header-nav__link:hover {
+  color: #ecc7d0;
 }
