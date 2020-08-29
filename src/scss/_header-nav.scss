@@ -1,3 +1,59 @@
-.header-menu {
-    border: 2px solid $colorRed;
+.header-nav {
+  display: flex;
+  align-items: center;
+  border: 2px solid $colorRed;
+  height: 90px;
+}
+
+.header-nav__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.item {
+  position: relative;
+}
+
+.has-submenu .submenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 15px;
+  float: none;
+  width: 200px;
+  list-style: none;
+  position: absolute;
+}
+
+.has-submenu:hover .submenu {
+  display: inline-block;
+}
+
+.has-submenu:hover .submenu .subitem {
+  border: 2px solid blue;
+  width: 150px;
+}
+
+// .item2 {
+//   position: relative;
+// }
+
+.has-submenu2 .submenu2 {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 150px;
+
+  float: none;
+  width: 100px;
+  list-style: none;
+  background-color: yellow;
+  border: 2px solid red;
+}
+
+.has-submenu2:hover .submenu2 {
+  display: inline-block;
 }

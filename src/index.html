@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="header-top">
       <div class="header-top__phone">Phone</div>
       <div class="header-top__mail">Email</div>
@@ -24,17 +24,33 @@
       <div class="header-middle__bucket">bucket</div>
     </div>
 
-    <nav class="header-menu">
-      <ul class="header-menu__list">
-        <li class="header-menu__item">kategorie</li>
-        <li class="header-menu__item">nowości</li>
-        <li class="header-menu__item">promocje</li>
-        <li class="header-menu__item">wyprzedaze</li>
-        <li class="header-menu__item">kolekcje sezonu</li>
-        <li class="header-menu__item">nasza oferta</li>
-        <li class="header-menu__item">trendy 2018</li>
-        <li class="header-menu__item">blog</li>
-        <li class="header-menu__item">contact</li>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+
+        <li class="item has-submenu">
+          <a href="">kategorie</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="plan1.html">Plan 1</a></li>
+            <li class="subitem"><a href="plan2.html">Plan 2</a></li>
+            <li class="subitem"><a href="plan3.html">Plan 3</a></li>
+            <li class="subitem item2 has-submenu2">
+              <a href="">kategorie</a>
+              <ul class="submenu2">
+                <li class="subitem2"><a href="plan1.html">Plan 1</a></li>
+                <li class="subitem2"><a href="plan2.html">Plan 2</a></li>
+                <li class="subitem2"><a href="plan3.html">Plan 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header-nav__item">nowości</li>
+        <li class="header-nav__item">promocje</li>
+        <li class="header-nav__item">wyprzedaze</li>
+        <li class="header-nav__item">kolekcje sezonu</li>
+        <li class="header-nav__item">nasza oferta</li>
+        <li class="header-nav__item">trendy 2018</li>
+        <li class="header-nav__item">blog</li>
+        <li class="header-nav__item">contact</li>
       </ul>
     </nav>
   </header>
