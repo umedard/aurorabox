@@ -1,8 +1,10 @@
 .header-nav {
   display: flex;
   align-items: center;
-  border: 2px solid $colorRed;
+  flex-wrap: wrap;
   height: 90px;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .header-nav__list {

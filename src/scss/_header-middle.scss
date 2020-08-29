@@ -1,3 +1,32 @@
 .header-middle {
-    border: 2px solid $colorRed;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header-middle__logo {
+  width: 25%;
+}
+
+.header-middle__form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-middle__bucket {
+  width: 25%;
+}
+
+// form
+
+.header-form {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 500px;
+  background: url(images/search.png) no-repeat right center;
+  background-size: 5%;
+  padding: 20px;
 }

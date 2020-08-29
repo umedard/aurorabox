@@ -15,10 +15,6 @@
   height: 100%;
 }
 
-hr {
-  margin: 0;
-}
-
 .header-top__phone,
 .header-top__mail {
   padding-right: 1em;
@@ -45,4 +41,8 @@ hr {
 .header-top__icon {
   padding-right: 0.4em;
   transform: translateY(1px);
+}
+
+.header-top__text {
+  font-size: 0.7em;
 }

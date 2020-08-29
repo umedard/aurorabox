@@ -1,15 +1,3 @@
-.header-top {
-  border: 2px solid #ecc7d0;
-}
-
-.header-middle {
-  border: 2px solid #ecc7d0;
-}
-
-.header-menu {
-  border: 2px solid #ecc7d0;
-}
-
 html,
 body,
 div,
@@ -174,4 +162,142 @@ hr {
 input,
 select {
   vertical-align: middle;
+}
+
+.header-top {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.header-top__container {
+  height: 30px;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.header-top__phone,
+.header-top__mail {
+  padding-right: 1em;
+}
+
+.header-top__login,
+.header-top__signup {
+  border-right: 1px solid #d7d7d7;
+  padding: 0 1em;
+}
+
+.header-top__login {
+  border-left: 1px solid #d7d7d7;
+}
+
+.header-top__phone,
+.header-top__mail,
+.header-top__login,
+.header-top__signup {
+  display: flex;
+  align-items: center;
+}
+
+.header-top__icon {
+  padding-right: 0.4em;
+  transform: translateY(1px);
+}
+
+.header-top__text {
+  font-size: 0.7em;
+}
+
+.header-middle {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header-middle__logo {
+  width: 25%;
+}
+
+.header-middle__form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-middle__bucket {
+  width: 25%;
+}
+
+.header-form {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 500px;
+  background: url(images/search.png) no-repeat right center;
+  background-size: 5%;
+  padding: 20px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header-nav__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.item {
+  position: relative;
+}
+
+.has-submenu .submenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 15px;
+  float: none;
+  width: 200px;
+  list-style: none;
+  position: absolute;
+}
+
+.has-submenu:hover .submenu {
+  display: inline-block;
+}
+
+.has-submenu:hover .submenu .subitem {
+  border: 2px solid blue;
+  width: 150px;
+}
+
+.has-submenu2 .submenu2 {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 150px;
+  float: none;
+  width: 100px;
+  list-style: none;
+  background-color: yellow;
+  border: 2px solid red;
+}
+
+.has-submenu2:hover .submenu2 {
+  display: inline-block;
 }
