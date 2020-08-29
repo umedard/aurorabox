@@ -1,3 +1,48 @@
 .header-top {
-    border: 2px solid $colorRed;
+  border-bottom: $line;
+}
+.header-top__container {
+  height: 30px;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__wrapper {
+  display: flex;
+  height: 100%;
+}
+
+hr {
+  margin: 0;
+}
+
+.header-top__phone,
+.header-top__mail {
+  padding-right: 1em;
+}
+
+.header-top__login,
+.header-top__signup {
+  border-right: $line;
+  padding: 0 1em;
+}
+
+.header-top__login {
+  border-left: $line;
+}
+
+.header-top__phone,
+.header-top__mail,
+.header-top__login,
+.header-top__signup {
+  display: flex;
+  align-items: center;
+}
+
+.header-top__icon {
+  padding-right: 0.4em;
+  transform: translateY(1px);
 }
