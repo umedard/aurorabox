@@ -1,0 +1,107 @@
+// mixin for submenu
+@mixin nav__list {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  float: none;
+  width: 200px;
+  list-style: none;
+  border: 2px solid #f7f7f7;
+  box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
+}
+
+// main menu
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 3em auto;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__item {
+  position: relative;
+  z-index: 1;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 500ms;
+}
+
+.nav__link:hover {
+  color: $pink;
+}
+
+// submenu
+
+.nav__wrapper {
+  position: absolute;
+  top: 10px;
+  height: 30px;
+  width: 100%;
+}
+
+.has-submenu .nav__submenu {
+  @include nav__list;
+  left: 0;
+  top: 30px;
+}
+
+.has-submenu:hover .nav__submenu {
+  display: inline-block;
+}
+
+.has-submenu:hover .nav__submenu .nav__subitem {
+  width: 180px;
+  position: relative;
+  margin-left: 20px;
+  padding: 10px 10px;
+  transform: translateX(-20px);
+  color: black;
+}
+
+.nav__sublink {
+  color: black;
+  text-decoration: none;
+  transition: 1s color;
+}
+
+li:hover > .nav__sublink {
+  color: $pink;
+}
+
+.nav__subitem:hover {
+  background-color: #f7f7f7;
+  margin-right: 20px;
+}
+
+.nav__subitem:first-child {
+  margin-top: 20px;
+}
+
+.nav__subitem:last-child {
+  margin-bottom: 20px;
+}
+
+.has-nav__submenu2 .nav__submenu2 {
+  @include nav__list;
+  left: 200px;
+  top: -2px;
+  transform: translateY(-20px);
+}
+
+.has-nav__submenu2:hover .nav__submenu2 {
+  display: inline-block;
+}
