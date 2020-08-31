@@ -4,7 +4,7 @@ function toggleBasket() {
   });
 
   document.addEventListener("click", ({ target }) => {
-    if (!target.closest(".header-middle__busket")) {
+    if (!target.closest(".busket__wrapper")) {
       document.querySelector("#drop").classList.remove("open");
     }
   });

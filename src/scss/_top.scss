@@ -1,7 +1,7 @@
-.header-top {
+.top {
   border-bottom: $line;
 }
-.header-top__container {
+.top__container {
   height: 30px;
   max-width: 1240px;
   margin: 0 auto;
@@ -10,39 +10,39 @@
   align-items: center;
 }
 
-.header-top__wrapper {
+.top__wrapper {
   display: flex;
   height: 100%;
 }
 
-.header-top__phone,
-.header-top__mail {
+.top__phone,
+.top__mail {
   padding-right: 1em;
 }
 
-.header-top__login,
-.header-top__signup {
+.top__login,
+.top__signup {
   border-right: $line;
   padding: 0 1em;
 }
 
-.header-top__login {
+.top__login {
   border-left: $line;
 }
 
-.header-top__phone,
-.header-top__mail,
-.header-top__login,
-.header-top__signup {
+.top__phone,
+.top__mail,
+.top__login,
+.top__signup {
   display: flex;
   align-items: center;
 }
 
-.header-top__icon {
+.top__icon {
   padding-right: 0.4em;
   transform: translateY(1px);
 }
 
-.header-top__text {
+.top__text {
   font-size: 0.7em;
 }

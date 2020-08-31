@@ -164,11 +164,11 @@ select {
   vertical-align: middle;
 }
 
-.header-top {
+.top {
   border-bottom: 1px solid #d7d7d7;
 }
 
-.header-top__container {
+.top__container {
   height: 30px;
   max-width: 1240px;
   margin: 0 auto;
@@ -177,40 +177,40 @@ select {
   align-items: center;
 }
 
-.header-top__wrapper {
+.top__wrapper {
   display: flex;
   height: 100%;
 }
 
-.header-top__phone,
-.header-top__mail {
+.top__phone,
+.top__mail {
   padding-right: 1em;
 }
 
-.header-top__login,
-.header-top__signup {
+.top__login,
+.top__signup {
   border-right: 1px solid #d7d7d7;
   padding: 0 1em;
 }
 
-.header-top__login {
+.top__login {
   border-left: 1px solid #d7d7d7;
 }
 
-.header-top__phone,
-.header-top__mail,
-.header-top__login,
-.header-top__signup {
+.top__phone,
+.top__mail,
+.top__login,
+.top__signup {
   display: flex;
   align-items: center;
 }
 
-.header-top__icon {
+.top__icon {
   padding-right: 0.4em;
   transform: translateY(1px);
 }
 
-.header-top__text {
+.top__text {
   font-size: 0.7em;
 }
 
@@ -256,19 +256,19 @@ select {
   margin: 30px 0;
 }
 
-.header-middle__busket {
+.busket {
+  position: relative;
+  width: 2em;
+  transform: translateX(50px);
+}
+
+.busket__wrapper {
   position: relative;
   width: 25%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.busket {
-  position: relative;
-  width: 2em;
-  transform: translateX(50px);
 }
 
 .busket__svg {

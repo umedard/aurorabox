@@ -45,7 +45,13 @@
 
 // busket
 
-.header-middle__busket {
+.busket {
+  position: relative;
+  width: 2em;
+  transform: translateX(50px);
+}
+
+.busket__wrapper {
   position: relative;
   width: 25%;
   height: 100%;
@@ -54,11 +60,6 @@
   align-items: center;
 }
 
-.busket {
-  position: relative;
-  width: 2em;
-  transform: translateX(50px);
-}
 .busket__svg {
   position: absolute;
   z-index: 100;
