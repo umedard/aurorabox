@@ -1,0 +1,34 @@
+// list of ordered items
+.orderList {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  border: orange 2px solid;
+  width: 22em;
+  border: 2px solid #f7f7f7;
+  box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
+}
+
+// toggle class
+.orderList__open {
+  display: block !important;
+}
+
+.orderList__container {
+  padding: 2em;
+  background-color: white;
+  z-index: 1000;
+}
+
+.orderList__inbucket {
+}
+
+.orderList__button {
+  width: 100px;
+  margin: 0 auto;
+  padding: 1em 3em;
+  background: red;
+  color: white;
+  border-radius: 5%;
+}

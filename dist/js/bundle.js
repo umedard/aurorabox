@@ -2,13 +2,13 @@
 
 function toggleBasket() {
   document.querySelector("#busket").addEventListener("click", function () {
-    document.querySelector("#drop").classList.toggle("open");
+    document.querySelector("#drop").classList.toggle("orderList__open");
   });
   document.addEventListener("click", function (_ref) {
     var target = _ref.target;
 
     if (!target.closest(".busket__wrapper")) {
-      document.querySelector("#drop").classList.remove("open");
+      document.querySelector("#drop").classList.remove("orderList__open");
     }
   });
   document.querySelector("#drop").addEventListener("click", function (e) {

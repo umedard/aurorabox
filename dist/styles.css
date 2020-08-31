@@ -409,7 +409,7 @@ li:hover > .submenu__link {
   color: #ecc7d0;
 }
 
-.header-drop {
+.orderList {
   display: none;
   position: absolute;
   top: 100px;
@@ -420,17 +420,17 @@ li:hover > .submenu__link {
   box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
 }
 
-.open {
+.orderList__open {
   display: block !important;
 }
 
-.header-drop__container {
+.orderList__container {
   padding: 2em;
   background-color: white;
   z-index: 1000;
 }
 
-.header-drop__seebucket {
+.orderList__button {
   width: 100px;
   margin: 0 auto;
   padding: 1em 3em;

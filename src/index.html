@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="./js/bundle.js" defer></script>
   <title>Aurora Creation</title>
 </head>
 
@@ -84,14 +85,14 @@
           <p>Twój koszyk</p>
         </div>
         <!-- basket drop menu -->
-        <div class="header-drop" id="drop">
-          <div class="header-drop__container">
-            <div class="header-drop__inbucket">Produkty w koszyku <strong>2</strong></div>
-            <div class="header-drop__tobepaid">Kwota do zapłaty <strong>240 PLN</strong></div>
+        <div class="orderList" id="drop">
+          <div class="orderList__container">
+            <div class="orderList__inbucket">Produkty w koszyku <strong>2</strong></div>
+            <div class="orderList__tobepaid">Kwota do zapłaty <strong>240 PLN</strong></div>
             <hr>
 
             <div class="order">
-              <div class="order__photo"><img src="./images/miniatura_aurora1.png" alt="" srcset=""></div>
+              <div class="order__photo"><img src="./images/miniatura_aurora1.png" alt="Biustonosz"></div>
               <div class="order__wrapper">
 
                 <div class="order__desctiption">Biustonosz push-up line mos 12</div>
@@ -116,7 +117,7 @@
               </div>
             </div>
             <div class="order">
-              <div class="order__photo"><img src="./images/miniatura_aurora1.png" alt="" srcset=""></div>
+              <div class="order__photo"><img src="./images/miniatura_aurora1.png" alt="Biustonosz"></div>
               <div class="order__wrapper">
 
                 <div class="order__desctiption">Biustonosz push-up line mos 12</div>
@@ -141,7 +142,7 @@
               </div>
             </div>
             <hr>
-            <div class="header-drop__seebucket">Zobacz koszyk</div>
+            <div class="orderList__button">Zobacz koszyk</div>
           </div>
         </div>
       </div>
@@ -186,7 +187,7 @@
       </ul>
     </nav>
   </header>
-  <script src="./js/bundle.js"></script>
+
 </body>
 
 </html>
