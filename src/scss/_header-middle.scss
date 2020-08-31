@@ -60,11 +60,11 @@
 .busket {
   position: relative;
   width: 2em;
+  transform: translateX(50px);
 }
 .busket__svg {
   position: absolute;
-  border: 2px solid red;
-  cursor: pointer;
+  z-index: 100;
 }
 
 .basket__tooltip {
@@ -88,5 +88,8 @@
 .busket__text {
   width: 5em;
   width: 7em;
+  padding: 20px 0 20px 50px;
   font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
 }
