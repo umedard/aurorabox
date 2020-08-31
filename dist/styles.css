@@ -303,6 +303,92 @@ select {
   z-index: 1000;
 }
 
+.orderList {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  border: orange 2px solid;
+  width: 22em;
+  border: 2px solid #f7f7f7;
+  box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
+}
+
+.orderList__open {
+  display: block !important;
+}
+
+.orderList__container {
+  padding: 2em;
+  background-color: white;
+  z-index: 1000;
+}
+
+.orderList__items {
+  font-size: 1em;
+}
+
+.orderList__totalDue {
+  font-size: 1em;
+}
+
+.orderList__button {
+  width: 100px;
+  margin: 0 auto;
+  padding: 1em 3em;
+  background: red;
+  color: white;
+  border-radius: 5%;
+  transition: 1s background-color;
+  cursor: pointer;
+}
+
+.orderList__button:hover {
+  background-color: yellow;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 1em 0;
+}
+
+.order__wrapper {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 0.7em;
+}
+
+.order__price {
+  font-size: 1em;
+}
+
+.order__desctiption {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.order__options {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order__amount {
+  font-size: 1em;
+}
+
+.order__amount_count {
+  border: 1px solid grey;
+  background-color: white;
+  padding: 0.2em 0.3em;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -407,68 +493,4 @@ li:hover > .submenu__link {
 
 .header-nav__link:hover {
   color: #ecc7d0;
-}
-
-.orderList {
-  display: none;
-  position: absolute;
-  top: 100px;
-  right: 0;
-  border: orange 2px solid;
-  width: 22em;
-  border: 2px solid #f7f7f7;
-  box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
-}
-
-.orderList__open {
-  display: block !important;
-}
-
-.orderList__container {
-  padding: 2em;
-  background-color: white;
-  z-index: 1000;
-}
-
-.orderList__button {
-  width: 100px;
-  margin: 0 auto;
-  padding: 1em 3em;
-  background: red;
-  color: white;
-  border-radius: 5%;
-}
-
-.order {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  padding: 1em 0;
-}
-
-.order__wrapper {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 0 0.7em;
-}
-
-.order__desctiption {
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: 700;
-}
-
-.order__options {
-  margin-top: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.order__amount_count {
-  border: 1px solid grey;
-  background-color: white;
-  padding: 0.2em 0.3em;
 }
