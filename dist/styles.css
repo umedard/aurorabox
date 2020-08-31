@@ -214,7 +214,7 @@ select {
   font-size: 0.7em;
 }
 
-.header-middle {
+.header {
   height: 90px;
   display: flex;
   align-items: center;
@@ -222,19 +222,14 @@ select {
   margin: 0 auto;
 }
 
-.header-middle__logo {
-  width: 25%;
-  height: 100%;
-}
-
-.header-middle__form {
+.search {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   outline: none;
 }
 
-.header-form {
+.search__input {
   border: none;
   border-bottom: 1px solid black;
   width: 500px;
@@ -244,9 +239,14 @@ select {
   outline: none;
 }
 
-.header-form:active,
-.header-form:focus {
+.search__input:active,
+.search__input:focus {
   outline: none;
+}
+
+.logo__container {
+  width: 25%;
+  height: 100%;
 }
 
 .logo {

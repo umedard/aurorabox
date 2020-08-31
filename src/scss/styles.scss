@@ -1,7 +1,4 @@
 @import "reset";
 @import "variables";
-@import "top";
-@import "header-middle";
-@import "orderList";
-@import "order";
-@import "header-nav";
+// header
+@import "./header/_index";
