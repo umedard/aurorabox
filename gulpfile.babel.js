@@ -4,6 +4,7 @@ import cleanCSS from "gulp-clean-css";
 import imagemin from "gulp-imagemin";
 import browserSync from "browser-sync";
 import concat from "gulp-concat";
+import babel from "gulp-babel";
 
 const sassOptions = { outputStyle: "expanded", errLogToConsole: true };
 
@@ -36,6 +37,21 @@ exports.minifycss = () =>
 exports.packjs = () =>
   gulp
     .src("./src/js/*.js")
+    .pipe(
+      babel({
+        presets: [
+          [
+            "@babel/preset-env",
+            {
+              targets: {
+                chrome: "58",
+                ie: "11",
+              },
+            },
+          ],
+        ],
+      })
+    )
     .pipe(concat("bundle.js"))
     .pipe(gulp.dest("./dist/js"));
 
