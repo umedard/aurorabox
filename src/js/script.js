@@ -1,4 +1,5 @@
 const busket = document.querySelector("#busket");
+const drop = document.querySelector("#drop");
 busket.addEventListener("click", () => {
-  console.log("toggle");
+  drop.classList.toggle("open");
 });

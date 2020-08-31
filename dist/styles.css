@@ -256,6 +256,10 @@ select {
   margin: 30px 0;
 }
 
+.open {
+  display: none;
+}
+
 .header-middle__busket {
   position: relative;
   width: 25%;
