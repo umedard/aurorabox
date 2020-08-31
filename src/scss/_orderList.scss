@@ -21,7 +21,14 @@
   z-index: 1000;
 }
 
-.orderList__inbucket {
+// total items in bucket
+.orderList__items {
+  font-size: 1em;
+}
+
+// total amount to be paid
+.orderList__totalDue {
+  font-size: 1em;
 }
 
 .orderList__button {
@@ -31,4 +38,10 @@
   background: red;
   color: white;
   border-radius: 5%;
+  transition: 1s background-color;
+  cursor: pointer;
+}
+
+.orderList__button:hover {
+  background-color: yellow;
 }
