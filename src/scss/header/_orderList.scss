@@ -4,10 +4,9 @@
   position: absolute;
   top: 100px;
   right: 0;
-  border: orange 2px solid;
   width: 22em;
-  border: 2px solid #f7f7f7;
-  box-shadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
+  border: $greyBorder;
+  box-shadow: $greyShadow;
   z-index: 1000;
 }
 
