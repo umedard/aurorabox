@@ -1,7 +1,46 @@
 .header {
   height: 90px;
+  padding-top: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__hamburger {
+  order: 1;
+  width: 10em;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  order: 2;
+  flex: 1;
   display: flex;
   align-items: center;
-  max-width: 1240px;
-  margin: 0 auto;
+  justify-content: left;
 }
+
+.header__search {
+  flex: 3;
+  order: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__basket {
+  width: 10em;
+  order: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+// .header__break {
+//   order: 4;
+//   flex-basis: 100%;
+//   height: 0;
+// }

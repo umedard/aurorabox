@@ -2,7 +2,7 @@
 .orderList {
   display: none;
   position: absolute;
-  top: 100px;
+  top: 60px;
   right: 0;
   width: 22em;
   border: $greyBorder;
@@ -17,7 +17,7 @@
 
 .orderList__container {
   padding: 2em;
-  background-color: white;
+  background-color: $white;
   z-index: 1000;
 }
 
@@ -35,13 +35,13 @@
   width: 100px;
   margin: 0 auto;
   padding: 1em 3em;
-  background: red;
-  color: white;
+  background: $darkPink;
+  color: $white;
   border-radius: 5%;
-  transition: 1s background-color;
+  transition: 1s transform;
+  white-space: nowrap;
   cursor: pointer;
-}
-
-.orderList__button:hover {
-  background-color: yellow;
+  &:hover {
+    transform: perspective(1px) translateZ(0);
+  }
 }

@@ -1,15 +1,15 @@
 function toggleBasket() {
   document.querySelector("#busket").addEventListener("click", () => {
-    document.querySelector("#drop").classList.toggle("orderList__open");
+    document.querySelector("#orderList").classList.toggle("orderList__open");
   });
 
   document.addEventListener("click", ({ target }) => {
-    if (!target.closest(".busket__wrapper")) {
-      document.querySelector("#drop").classList.remove("orderList__open");
+    if (!target.closest("#busket__wrapper")) {
+      document.querySelector("#orderList").classList.remove("orderList__open");
     }
   });
 
-  document.querySelector("#drop").addEventListener("click", (e) => {
+  document.querySelector("#orderList").addEventListener("click", (e) => {
     e.stopPropagation();
   });
 }

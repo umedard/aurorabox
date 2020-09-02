@@ -17,12 +17,21 @@
 
 .order__price {
   font-size: 1em;
+  &_promo {
+    color: $darkPink;
+    font-size: 0.7em;
+    text-decoration: line-through;
+  }
 }
 
 .order__desctiption {
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 700;
+}
+
+.order__desctiption_promo {
+  color: $darkPink;
 }
 
 .order__options {
@@ -37,7 +46,12 @@
 }
 
 .order__amount_count {
-  border: 1px solid grey;
-  background-color: white;
-  padding: 0.2em 0.3em;
+  border: 1px solid $lightGrey;
+  background-color: $white;
+  padding: 0.1em 0.4em;
+  margin-left: 0.3em;
+}
+
+.order__button {
+  cursor: pointer;
 }

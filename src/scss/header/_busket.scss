@@ -1,46 +1,40 @@
 .busket {
-  position: relative;
-  width: 2em;
-  transform: translateX(50px);
+  max-width: 150px;
+  padding: 0 0.5em;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: flex-end;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+  margin-right: 2em;
 }
 
 .busket__wrapper {
   position: relative;
-  width: 25%;
-  height: 100%;
   display: flex;
+  margin-right: 0;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.busket__svg {
+.busket__number {
   position: absolute;
-  z-index: 100;
-}
-
-.basket__tooltip {
-  position: absolute;
+  top: 20px;
+  left: 21px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: $pink;
-  left: 20px;
-  top: 20px;
-  width: 15px;
-  height: 15px;
-  z-index: 259;
-}
-
-.basket__number {
-  color: white;
-  font-size: 0.6em;
-  text-align: center;
-  transform: translateY(3px);
-}
-
-.busket__text {
-  width: 5em;
-  width: 7em;
-  padding: 20px 0 20px 50px;
+  padding: 5px;
+  border-radius: 100%;
   font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
+  font-size: 0.6em;
+  white-space: nowrap;
+  color: $white;
+}
+
+.busket__numbers {
+  transform: translateX(2px);
 }

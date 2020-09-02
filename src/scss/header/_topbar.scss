@@ -1,0 +1,49 @@
+.top {
+  border-bottom: $line;
+}
+
+.top__wrapper {
+  height: 2.3em;
+  display: flex;
+  align-items: center;
+}
+
+.top__link {
+  text-decoration: none;
+  color: $black;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1em;
+}
+
+.top__svg {
+  padding-right: 0.4em;
+  transform: translateY(1px);
+  transition: 500ms transform;
+}
+
+.top__link:hover .top__svg {
+  transform-origin: center;
+  transform: scale(1.1);
+}
+
+.top__login,
+.top__signup {
+  border-right: $line;
+}
+
+.top__login {
+  border-left: $line;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 512px) {
+  .top__text {
+    display: none;
+  }
+  .top__svg {
+    padding: 0 0.3em;
+  }
+}
