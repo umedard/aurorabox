@@ -1,3 +1,4 @@
+// colors
 $black: #000000;
 $white: #ffffff;
 $lightGrey: #d7d7d7;
@@ -5,18 +6,45 @@ $darkerGrey: #f7f7f7;
 $pink: #ecc7d0;
 $darkPink: #eb316b;
 
+// lines
 $line: 1px solid $lightGrey;
 
-$greyBorder: 3px solid #f7f7f7;
+// borders
+$grey-border: 3px solid #f7f7f7;
 
+// shadows
 $greyShadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
 
+// font
 $mainFont: "Lato";
 
+// breakpoints
 $extraLarge: 1200px;
 $large: 1000px;
 $medium: 992px;
 $small: 808px;
 $extraSmall: 576px;
 
-// fonts
+/* base font size - applied at body / html level */
+// $fs-base: 16px;
+
+/* larger than heading font sizes */
+// $fs-giga: 80px;
+// $fs-mega: 70px;
+// $fs-kilo: 60px;
+
+/* heading font sizes */
+// $fs-h1: 36px;
+// $fs-h2: 32px;
+// $fs-h3: 28px;
+// $fs-h4: 24px;
+// $fs-h5: 20px;
+// $fs-h6: 18px;
+
+/* smaller than heading font sizes */
+$fs-medium: 17px;
+$fs-small: 15.5px;
+$fs-mini: 14px;
+$fs-milli: 12.5;
+$fs-micro: 11px;
+// $fs-nano: 8px;

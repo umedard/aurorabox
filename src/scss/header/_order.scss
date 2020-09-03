@@ -1,20 +1,21 @@
 .order {
+  padding: 1em 0;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  height: 100%;
-  padding: 1em 0;
 }
 
 .order__wrapper {
+  padding: 0 0.7em;
   height: 80px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  padding: 0 0.7em;
 }
 
 .order__price {
-  font-size: 1em;
+  font-size: $fs-small;
+  line-height: 1.5;
   &_promo {
     color: $darkPink;
     font-size: 0.7em;
@@ -24,8 +25,9 @@
 
 .order__desctiption {
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: $fs-micro;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .order__desctiption_promo {
@@ -40,14 +42,17 @@
 }
 
 .order__amount {
-  font-size: 1em;
+  font-size: $fs-small;
+  line-height: 1.2;
 }
 
 .order__amount_count {
-  border: 1px solid $lightGrey;
-  background-color: $white;
-  padding: 0.1em 0.4em;
   margin-left: 0.3em;
+  padding: 0.1em 0.4em;
+  background-color: $white;
+  border: 1px solid $lightGrey;
+  font-size: $fs-small;
+  line-height: 1.2;
 }
 
 .order__button {

@@ -1,7 +1,7 @@
 "use strict";
 
 function toggleBasket() {
-  document.querySelector("#busket").addEventListener("click", function () {
+  document.querySelector("#busket-trigger").addEventListener("click", function () {
     document.querySelector("#orderList").classList.toggle("orderList__open");
   });
   document.addEventListener("click", function (_ref) {

@@ -1,17 +1,19 @@
+// main menu
 .nav {
+  z-index: -1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: -1000;
+  font-size: $fs-medium;
 }
 
 .nav__list {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  border-bottom: $line;
   padding: 0 0 30px 0;
+  width: 100%;
+  border-bottom: $line;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .nav__item {
@@ -20,70 +22,73 @@
 }
 
 .nav__link {
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  transition: color 500ms;
   color: $black;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: color 500ms;
-  font-weight: 700;
-  padding: 0;
-  font-size: 0.8em;
-
   &:first-child {
     padding: 0 0.5em;
   }
+  &:hover {
+    color: $pink;
+  }
 }
 
-.nav__link:hover {
-  color: $pink;
-}
-
-.nav__wrapper {
+.nav__sublist_wrapper {
   position: absolute;
   top: 10px;
   height: 30px;
   width: 100%;
 }
 
+// lists
+
 @mixin nav__list {
-  display: none;
   position: absolute;
+  z-index: 1000;
+  display: none;
   padding: 0;
   margin: 0;
-  float: none;
   width: 200px;
+  float: none;
   list-style: none;
-  border: $greyBorder;
   box-shadow: $greyShadow;
-  z-index: 1000;
+  border: $grey-border;
   background-color: $white;
+  font-size: $fs-mini;
 }
 
-.nav__submenu {
+.nav__sublist {
   @include nav__list;
   left: 0;
   top: 20px;
 }
 
-.nav__has-submenu:hover .nav__submenu {
-  display: inline-block;
+.nav__item:hover .nav__sublist {
+  display: block;
 }
 
-.nav__submenu2 {
+.nav__sublist2 {
   @include nav__list;
   left: 200px;
   top: -2px;
   transform: translateY(-20px);
 }
 
-.nav__has-submenu2:hover .nav__submenu2 {
-  display: inline-block;
+.nav__subitem:hover .nav__sublist2 {
+  display: block;
 }
 
+// items
+
 @mixin nav__subitem {
-  width: 180px;
   position: relative;
   margin-left: 20px;
   padding: 10px 10px;
+  width: 180px;
   transform: translateX(-20px);
   color: $black;
   &:hover {
@@ -96,11 +101,12 @@
     margin-bottom: 20px;
   }
 }
+
 .nav__subitem {
   @include nav__subitem;
   &:hover {
-    background-color: $darkerGrey;
     margin-right: 20px;
+    background-color: $darkerGrey;
   }
 }
 .nav__subitem2 {
@@ -110,18 +116,14 @@
   }
 }
 
-@mixin nav__sublink {
+// links
+
+.nav__sublink,
+.nav__sublink2 {
+  padding-left: 1em;
   color: $black;
   text-decoration: none;
   transition: 1s color;
-  padding-left: 1em;
-}
-.nav__sublink {
-  @include nav__sublink;
-}
-
-.nav__sublink2 {
-  @include nav__sublink;
 }
 
 li:hover > .nav__sublink2 {

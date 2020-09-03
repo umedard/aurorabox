@@ -1,5 +1,5 @@
 function toggleBasket() {
-  document.querySelector("#busket").addEventListener("click", () => {
+  document.querySelector("#busket-trigger").addEventListener("click", () => {
     document.querySelector("#orderList").classList.toggle("orderList__open");
   });
 

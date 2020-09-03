@@ -4,8 +4,8 @@
   position: absolute;
   top: 60px;
   right: 0;
-  width: 22em;
-  border: $greyBorder;
+  width: 23em;
+  border: $grey-border;
   box-shadow: $greyShadow;
   z-index: 1000;
 }
@@ -24,11 +24,19 @@
 // total items in busket
 .orderList__items {
   font-size: 1em;
+  font-size: $fs-milli;
+  line-height: 1.6;
 }
 
 // total amount to be paid
 .orderList__totalDue {
-  font-size: 1em;
+  font-size: $fs-mini;
+  line-height: 1.5;
+}
+
+.orderList__totalDue strong {
+  font-size: $fs-small;
+  line-height: 1.4;
 }
 
 .orderList__button {
@@ -41,6 +49,7 @@
   transition: 1s background-color;
   white-space: nowrap;
   text-align: center;
+  font-size: $fs-mini;
   cursor: pointer;
   &:hover {
     background-color: $pink;
