@@ -17,6 +17,10 @@
   margin-right: 0;
   justify-content: flex-end;
   align-items: flex-end;
+  &:hover {
+    transform-origin: center;
+    transform: scale(1.1);
+  }
 }
 
 .busket__number {
@@ -37,4 +41,20 @@
 
 .busket__numbers {
   transform: translateX(2px);
+}
+
+@media screen and (max-width: $medium) {
+  .busket {
+    margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .busket {
+    margin-right: 0;
+  }
+
+  .busket__text {
+    display: none;
+  }
 }
