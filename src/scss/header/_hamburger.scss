@@ -1,6 +1,12 @@
 .hamburger {
   &:hover {
     transform-origin: center;
-    transform: scale(1.1);
+    // transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: $small) {
+  .hamburger {
+    padding: 0 1rem;
   }
 }

@@ -17,10 +17,6 @@
   margin-right: 0;
   justify-content: flex-end;
   align-items: flex-end;
-  &:hover {
-    transform-origin: center;
-    transform: scale(1.1);
-  }
 }
 
 .busket__number {
@@ -52,6 +48,7 @@
 @media screen and (max-width: $small) {
   .busket {
     margin-right: 0;
+    padding-right: 1rem;
   }
 
   .busket__text {
