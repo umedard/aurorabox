@@ -8,6 +8,21 @@
   margin-right: 90px;
 }
 
+@media screen and (max-width: $medium) {
+  .search {
+    margin-right: 30px;
+    width: 70%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .search {
+    margin-right: 20px;
+    width: 60%;
+  }
+}
+
 .search__input {
   position: absolute;
   width: 100%;
@@ -17,11 +32,9 @@
   border-bottom: 1px solid black;
   font-family: Helvetica, Arial, sans-serif;
 
-  &:active {
+  &:focus {
     outline: none;
-  }
-  &:hover {
-    outline: none;
+    border-bottom: 2px solid black;
   }
 }
 
@@ -34,7 +47,10 @@
   outline: none;
   border: none;
   background-color: $white;
+  transition: 500ms transform;
   &:hover {
     cursor: pointer;
+    transform-origin: center center;
+    transform: scale(1.2);
   }
 }

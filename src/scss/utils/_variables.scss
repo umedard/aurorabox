@@ -1,5 +1,3 @@
-// colors
-
 $black: #000000;
 $white: #ffffff;
 $lightGrey: #d7d7d7;
@@ -7,24 +5,16 @@ $darkerGrey: #f7f7f7;
 $pink: #ecc7d0;
 $darkPink: #eb316b;
 
-// lines
-
 $line: 1px solid $lightGrey;
-
-// borders
 
 $greyBorder: 3px solid #f7f7f7;
 
-// shadows
-
 $greyShadow: -2px -2px 27px -15px rgba(0, 0, 0, 0.35);
 
-// font
-$main-font: "Lato";
+$mainFont: "Lato";
 
 $extraLarge: 1200px;
-$large: 1140px;
+$large: 1000px;
 $medium: 992px;
-$small: 768px;
+$small: 808px;
 $extraSmall: 576px;
-$mobile: auto;

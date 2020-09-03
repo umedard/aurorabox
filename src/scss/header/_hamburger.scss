@@ -1,0 +1,6 @@
+.hamburger {
+  &:hover {
+    transform-origin: center;
+    transform: scale(1.1);
+  }
+}

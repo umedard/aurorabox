@@ -32,16 +32,17 @@
 }
 
 .orderList__button {
-  width: 100px;
+  width: 7rem;
   margin: 0 auto;
   padding: 1em 3em;
   background: $darkPink;
   color: $white;
-  border-radius: 5%;
-  transition: 1s transform;
+  border-radius: 3px;
+  transition: 1s background-color;
   white-space: nowrap;
+  text-align: center;
   cursor: pointer;
   &:hover {
-    transform: perspective(1px) translateZ(0);
+    background-color: $pink;
   }
 }

@@ -1,5 +1,6 @@
 .header {
   height: 90px;
+  margin-bottom: 90px;
   padding-top: 1.5em;
   display: flex;
   flex-wrap: wrap;
@@ -11,12 +12,13 @@
   width: 10em;
   display: none;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .header__logo {
   order: 2;
   flex: 1;
+  width: 10em;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -27,7 +29,7 @@
   order: 3;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .header__basket {
@@ -39,8 +41,47 @@
   flex: 1;
 }
 
-// .header__break {
-//   order: 4;
-//   flex-basis: 100%;
-//   height: 0;
-// }
+@media screen and (max-width: $large) {
+  .header__basket,
+  .header__logo {
+    width: 7em;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .header__basket,
+  .header__logo {
+    width: 7em;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .header__hamburger {
+    order: 1;
+    flex: 1;
+    display: flex;
+  }
+
+  .header__logo {
+    flex: 3;
+    height: 100%;
+    width: 10em;
+    justify-content: center;
+  }
+
+  .header__basket {
+    order: 4;
+    flex: 1;
+    width: 3em;
+  }
+
+  .header__break {
+    order: 5;
+    flex-basis: 100%;
+    height: 0;
+  }
+  .header__search {
+    order: 6;
+    flex: 3;
+  }
+}
