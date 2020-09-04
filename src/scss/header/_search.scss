@@ -5,7 +5,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 90px;
+  margin-right: 65px;
 }
 
 .search__input {
@@ -45,6 +45,10 @@
 @media screen and (max-width: $small) {
   .search {
     margin-right: 20px;
-    width: 60%;
+    width: 70%;
+  }
+
+  .search__input {
+    width: 100%;
   }
 }

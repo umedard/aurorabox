@@ -36,9 +36,10 @@
 
 .busket__text {
   white-space: nowrap;
-  line-height: 0.992px;
+  line-height: 0.992;
   font-size: $fs-mini;
-  font-weight: bold;
+  // font-weight: bold;
+  transform: translateY(2px);
 }
 
 .busket__numbers {
