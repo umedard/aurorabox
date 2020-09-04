@@ -181,17 +181,17 @@ select {
   }
 }
 
-.top {
+.topbar {
   border-bottom: 1px solid #d7d7d7;
 }
 
-.top__wrapper {
+.topbar__wrapper {
   display: flex;
   height: 2.3em;
   align-items: center;
 }
 
-.top__link {
+.topbar__link {
   padding: 0 20px;
   height: 100%;
   color: #000000;
@@ -202,56 +202,56 @@ select {
   align-items: center;
 }
 
-.top__link:first-child {
+.topbar__link:first-child {
   padding-left: 0;
 }
 
-.top__text {
+.topbar__text {
   line-height: 1.334;
   font-size: 12.5;
 }
 
-.top__svg {
+.topbar__svg {
   padding-right: 0.4em;
   transform: translateY(1px);
 }
 
-.top__image {
+.topbar__image {
   width: 12px;
   height: 12px;
 }
 
-.top__link:hover .top__svg {
+.topbar__link:hover .topbar__svg {
   transform-origin: center;
   transform: scale(1.1);
 }
 
-.top__login,
-.top__signup {
+.topbar__login,
+.topbar__signup {
   border-right: 1px solid #d7d7d7;
 }
 
-.top__login {
+.topbar__login {
   border-left: 1px solid #d7d7d7;
   margin-left: auto;
 }
 
 @media screen and (max-width: 808px) {
-  .top__link:first-child {
+  .topbar__link:first-child {
     padding-left: 17px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .top__text {
+  .topbar__text {
     display: none;
   }
-  .top__svg {
+  .topbar__svg {
     padding: 0 0.3em;
   }
 }
 
-.header {
+.middlebar {
   height: 90px;
   margin-bottom: 40px;
   padding-top: 1.5em;
@@ -260,7 +260,7 @@ select {
   justify-content: space-between;
 }
 
-.header__hamburger {
+.middlebar__hamburger {
   order: 1;
   flex: 1;
   display: none;
@@ -268,7 +268,7 @@ select {
   justify-content: start;
 }
 
-.header__logo {
+.middlebar__logo {
   order: 2;
   flex: 1;
   display: flex;
@@ -276,7 +276,7 @@ select {
   justify-content: left;
 }
 
-.header__search {
+.middlebar__search {
   order: 3;
   flex: 3;
   display: flex;
@@ -284,7 +284,7 @@ select {
   justify-content: flex-end;
 }
 
-.header__basket {
+.middlebar__basket {
   order: 4;
   flex: 1;
   display: flex;
@@ -293,20 +293,20 @@ select {
 }
 
 @media screen and (max-width: 808px) {
-  .header__hamburger {
+  .middlebar__hamburger {
     display: flex;
   }
-  .header__logo {
+  .middlebar__logo {
     flex: 3;
     height: 100%;
     justify-content: center;
   }
-  .header__break {
+  .middlebar__break {
     order: 5;
     flex-basis: 100%;
     height: 0;
   }
-  .header__search {
+  .middlebar__search {
     order: 6;
     justify-content: center;
   }

@@ -1,14 +1,14 @@
-.top {
+.topbar {
   border-bottom: $line;
 }
 
-.top__wrapper {
+.topbar__wrapper {
   display: flex;
   height: 2.3em;
   align-items: center;
 }
 
-.top__link {
+.topbar__link {
   padding: 0 20px;
   height: 100%;
   color: $black;
@@ -22,47 +22,47 @@
   }
 }
 
-.top__text {
+.topbar__text {
   line-height: 1.334;
   font-size: $fs-milli;
 }
 
-.top__svg {
+.topbar__svg {
   padding-right: 0.4em;
   transform: translateY(1px);
 }
 
-.top__image {
+.topbar__image {
   width: 12px;
   height: 12px;
 }
 
-.top__link:hover .top__svg {
+.topbar__link:hover .topbar__svg {
   transform-origin: center;
   transform: scale(1.1);
 }
 
-.top__login,
-.top__signup {
+.topbar__login,
+.topbar__signup {
   border-right: $line;
 }
 
-.top__login {
+.topbar__login {
   border-left: $line;
   margin-left: auto;
 }
 
 @media screen and (max-width: $small) {
-  .top__link:first-child {
+  .topbar__link:first-child {
     padding-left: 17px;
   }
 }
 
 @media screen and (max-width: $extraSmall) {
-  .top__text {
+  .topbar__text {
     display: none;
   }
-  .top__svg {
+  .topbar__svg {
     padding: 0 0.3em;
   }
 }
